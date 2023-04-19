@@ -1,0 +1,496 @@
+/* This url import for using icon from awesome icon website throught CDN  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+/* Clear Out the predefine CSS    */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Creating variables for reusing the properties */
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592
+    --accent-color:#2294ed;
+    --padding-inline-section:20px;
+    --primary-body-color:#010028;
+}
+
+/* Describe FontFamily of the body in Advance */
+body{
+    font-family: 'Poppins','sans-serif';
+    color:var(--primary-text-color);
+}
+
+/* define h1,h2 and h3 (headings) font size  */
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+/* Defining p(paragraph) properties  */
+p{
+    font-family: 'roboto',serif;
+    font-size: 1.25;
+    color:var(--secondary-text-color);
+    line-height: ;
+}
+
+/* Defining property for anchor tags */
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Utility class for Quick use  */
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+/* Utilty class for Make container */
+.flex{
+    display:flex;
+    align-items: center;
+}
+/* UTILITY CLASS FOR bUTTON */
+.primary-button{
+background-color:#FFC107;
+border-radius: 6px;
+font-weight: 700;
+color:black !important;
+padding: 12px 24px;
+box-shadow: 0 0 2px green;
+transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: #FFC107;
+}
+.secondary-button{
+background-color:#010028;   
+color:white!important;
+border-radius: 6px;
+font-weight: 700;
+padding:12px 24px;
+transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    background-color:rgb(0, 255, 221);
+    color:black;
+
+}
+
+
+/* Top banner class For Styling */
+.top-banner{
+    background-image: url(./Pics/asset\ 18.png);
+    background-color: #010028; 
+    background-size: 3px;
+    }
+.container1{
+    color: white;
+    max-width: 1180;
+   text-align: center;
+   padding :15px 30px; 
+}
+
+/* THIS IS UNORDER LIST INSIDE NAV SECTION */
+.list1{
+    list-style: none;
+    gap:30px;
+}
+.list1:hover{
+
+}
+/* WHEN WE HOVER ON LINKS  */
+.link{
+    color:#183b56;
+    transition: 0.2s ease;
+    /* border: 0.1px  solid#494870; */
+    border-radius: 4px;
+    border-color:lightblue;
+    padding: ;
+}
+.link:hover{
+    color:black;
+    background-color: aquamarine;
+}
+.nav-toggle{
+    display: none;
+}
+
+
+/* MEDIA QUERY FOR RESPONSIVE NAVBAR */
+@media screen and (max-width:991px){
+    .nav-toggle{
+        display: block;
+    }
+    .link{
+        position: absolute;
+    }
+    .case1{
+        width: 45% !important;
+    }
+    .case2{
+        width: 45% !important;
+    }
+    .case3{
+        width: 45% !important;
+    }
+    .case4{
+        width: 45% !important;
+    }
+    .casestudy-div{
+        flex-wrap: wrap;
+    }
+    .list1{
+        flex-direction: column;
+    }
+    .nav-links{
+        position: absolute;
+        left: -100%;
+        top:100% 
+
+    }
+    .nav{
+        overflow: initial;
+    }
+}
+
+@media screen and (max-width:767px){
+    /* .header{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        max-width: 100%;
+    } */
+    .secondlast-footer-div{
+        flex-direction: column;
+        gap:20px;
+        align-items: center !important;
+    }
+    .nav-links{
+        position:fixed;
+        top:50px;
+        right:0;
+        background:rgb(131, 0, 131);
+        height:60vh;
+        width:100%;
+        /* align-items: center; */
+        text-align: center;
+        row-gap: 50px;
+        margin-top: 5px;
+        padding: 40px;
+        left:-100%;  
+    }
+    .nav-links.active{
+        left:0;
+    }
+    .link{
+        color: white !important;     
+    }
+    .test{
+        margin-right:30px;
+    }
+    .test2{
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+    .card-1{
+         height: 50%!important; 
+         width: 100vh!important;
+        padding: 20px;
+        /* margin-right: 20px; */
+    } 
+    .card-2{
+        height: 50%!important; 
+        width: 100vh!important;
+       padding: 20px;
+
+   } 
+   .card-3{
+    height: 50%!important; 
+    width: 100vh!important;
+   padding: 20px;
+} 
+.card-4{
+    height: 50%!important; 
+    width: 100vh!important;
+   padding: 20px;
+} 
+.card-5{
+    height: 50%!important; 
+    width: 100vh!important;
+   padding: 20px;
+} 
+.card-6{
+    height: 50%!important; 
+    width: 100vh!important;
+   padding: 20px;
+} 
+    
+}
+
+
+
+
+
+
+
+
+
+/* SPACE BETWEEN NAV SECTION CONTENT (COMPANY LOGO AND UNORDER LIST) */
+.container2{
+justify-content: space-between;
+margin-top: 20px;
+/* border: 2px solid black; */
+}
+.company-logo{
+    margin-left: 50px ;
+   
+}
+
+/* FIX THE SIZE OF NAV LINKS */
+.nav-links{
+    flex-basis: 730px;
+    margin-top: 20px;
+}
+.nav{
+
+}
+
+
+/* WE ARE ENTERING IN HEADER section */
+.header{
+    margin:50px;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    padding: 25px 25px;
+    gap:20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+} 
+.header-left{
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    padding:20px;
+    max-width: 400px;
+}
+.header-left,h1{
+    color: #FFC107;;
+}
+.header-left,p{
+    color: black;
+}
+.header-image-section{
+    
+    /* border: 2px solid black; */
+    /* margin-bottom: 40px;  */
+    box-sizing: border-box;
+    /* padding-bottom: 10px; */
+    /* padding-bottom: 200px; */
+    /* margin-bottom: 200px; */
+    /* margin-left: 70px; */
+}
+.header-image{
+max-width: vw;
+ max-height: 400px; 
+
+}
+
+
+
+
+
+/* WE ARE IN SET OF SERVICES OF COMPANY */
+
+.company-section{
+    margin: 50px;
+}
+.cards-div{
+    padding: 70px;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap:  20px !important;
+    
+}
+    /* gap:100px; */
+    
+    /* justify-content: space-around; */
+
+.card-1{
+border: 1px solid black;
+width: 8cm;
+height: 8cm;
+text-align: center;
+border-radius: 18px;
+}
+.card-2{
+    border: 1px solid black;
+    width: 8cm;
+    height: 8cm;
+text-align: center;
+border-radius: 18px;
+
+}
+.card-1{
+    border: 1px solid black;
+    width: 8cm;
+    height: 8cm;
+text-align: center;
+border-radius: 18px;
+
+    }
+.card-2{
+        border: 1px solid black;
+        width: 8cm;
+        height: 8cm;
+text-align: center;
+border-radius: 18px;
+
+}
+.card-3{
+border: 1px solid black;
+width: 8cm;
+ height: 8cm;
+text-align: center;
+border-radius: 18px;
+
+ }
+.card-4{
+border: 1px solid black;
+width: 8cm;
+height: 8cm;
+text-align: center;
+border-radius: 18px;
+
+}
+.card-5{
+border: 1px solid black;
+width: 8cm;
+height: 8cm;
+text-align: center;
+border-radius: 18px;
+
+}
+.card-6{
+border: 1px solid black;
+width: 8cm;
+height: 8cm;
+text-align: center;
+border-radius: 18px;
+
+}
+
+
+/* starting of case study section */
+.casestudy-section{
+    text-align: center;
+    /* border: 2px solid black; */
+}
+.casestudy-div{
+    /* border: 1px solid black; */
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+
+}
+.case1{
+/* border: 1px solid black; */
+height:9cm;
+width: 20%;
+background-repeat: round;
+background-image:  linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(Pics/red-church-1641745.jpg);
+}
+.case2{
+/* border: 1px solid black; */
+height:9cm;
+width: 20%;
+background-repeat: round;
+background-image:  linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.9)),url(Pics/information-gd498c7973_640.png);
+}
+.case3{
+/* border: 1px solid black; */
+height:9cm;
+width: 20%;
+background-repeat: round;
+/* text-align: end; */
+background-image:  linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(Pics/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg);
+}
+.case4{
+/* border: 1px solid black; */
+height:9cm;
+width: 20%;
+background-repeat: round;
+/* text-align: end; */
+background-image:  linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(Pics/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg);
+}
+.case1:hover{
+    box-shadow: 0 0 10px rgb(0,0,0,0.8);
+    transition:ease-in;
+}
+.case2:hover{
+    box-shadow: 0 0 10px rgb(0,0,0,0.8);
+    transition:ease-in;
+}
+.case3:hover{
+    box-shadow: 0 0 10px rgb(0,0,0,0.8);
+    transition:ease-in;
+}
+.case-text{
+    display: block;
+    color: white;
+    padding-top: 190px;;
+}
+
+
+
+/* secondlast footer start */
+
+
+.secondlast-footer-div{
+/* border: 1px solid black; */
+margin-top: 30px;
+align-items: flex-start;
+justify-content: space-between;
+padding: 25px;
+background-color: #010028;
+color:white;
+}
+.flex-column-items{
+    flex-direction: column;
+
+}
+.text-color{
+    color: antiquewhite;
+}
+
+
+
+
+
+/* This is client section */
+.client-div{
+/* border: 1px solid black; */
+justify-content:space-evenly;
+gap:30px;
+padding: 45px;
+flex-wrap: wrap;
+
+
+}
+.client-img{
+    height: 20mm;
+    width: 4cm;
+}
